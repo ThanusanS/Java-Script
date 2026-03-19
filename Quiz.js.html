@@ -122,7 +122,15 @@
         button.removeAttribute("disabled");
     }
 
-    
+    // What does setting the 'disabled' attribute on a button element do?
+    // Setting the 'disabled' attribute on a button element makes it unclickable and grays it out, indicating that it is not available for interaction.
+    // Why do we set the value of the "disabled" attribute to an empty string?
+    // The value of the "disabled" attribute does not matter; it is the presence of the attribute that disables the button. Setting it to an empty string is a common convention to indicate that the button is disabled, but any value (including "disabled") would have the same effect.  
+    // Why do we use the removeAttribute method to enable the button instead of setting the "disabled" attribute to false?
+    // The "disabled" attribute is a boolean attribute, which means that its presence alone indicates that the button is disabled. Setting it to false does not actually enable the button because the attribute would still be present. To enable the button, we need to remove the "disabled" attribute entirely using
+    // the removeAttribute method.
+    // What would happen if we set the "disabled" attribute to false instead of removing it?
+    // If we set the "disabled" attribute to false instead of removing it, the button would still be disabled because the presence of the "disabled" attribute, regardless of its value, indicates that the button is disabled. The button would remain unclickable and grayed out, giving the user the impression that it is not available for interaction.
 
 
     // TODO 5: Declare an isCorrect function that compares a guess to the right answer
